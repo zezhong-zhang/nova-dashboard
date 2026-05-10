@@ -1,0 +1,4 @@
+:HL["/_next/static/chunks/07j97i.l86ex8.css","style"]
+:HL["/_next/static/chunks/145o.lsi86g0w.css","style"]
+:HC["/",""]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"btia","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"cKgnp4T_5nk4wytq_mxgb"}
