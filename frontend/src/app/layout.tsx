@@ -4,23 +4,20 @@ import "katex/dist/katex.min.css";
 import { type Metadata } from "next";
 
 import { ThemeProvider } from "@/components/theme-provider";
-import { I18nProvider } from "@/core/i18n/context";
-import { detectLocaleServer } from "@/core/i18n/server";
 
 export const metadata: Metadata = {
-  title: "DeerFlow",
-  description: "A LangChain-based framework for building super agents.",
+  title: "NOVA - 突破性技术情报局",
+  description: "Breakthrough Technology Intelligence Agency",
 };
 
 export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-  const locale = await detectLocaleServer();
   return (
-    <html lang={locale} suppressContentEditableWarning suppressHydrationWarning>
+    <html lang="zh-CN" suppressContentEditableWarning suppressHydrationWarning>
       <body>
         <ThemeProvider attribute="class" enableSystem disableTransitionOnChange>
-          <I18nProvider initialLocale={locale}>{children}</I18nProvider>
+          {children}
         </ThemeProvider>
       </body>
     </html>
